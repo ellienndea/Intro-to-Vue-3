@@ -16,9 +16,11 @@
         <div class="product-container">
           <div class="product-image">
             <!-- image goes here -->
+            <img v-bind:src="image" alt="green socks with vue logo"> <!-- short for "v-bind:" is just ":" -->
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <a :href="details">Details</a>
           </div>
         </div>
       </div>
